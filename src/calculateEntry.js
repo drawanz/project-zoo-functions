@@ -14,7 +14,19 @@ function countEntrants(entrants) {
 }
 
 function calculateEntry(entrants) {
-  // seu código aqui
+  if (entrants === undefined || entrants.length === undefined) {
+    return 0;
+  }
+  const returned = countEntrants(entrants);
+  const returnedOfCountEntrants = Object.values(returned);
+  const prices = Object.values(data.prices);
+  const priceChild = prices[2];
+  const priceAdult = prices[0];
+  const priceSenior = prices[1];
+  const princesOrganized = [priceChild, priceAdult, priceSenior];
+  const values = princesOrganized.map((item, index) => item * returnedOfCountEntrants[index]);
+  const finalValue = values.reduce((acc, result) => acc + result);
+  return finalValue;
 }
 
 const entrants = [
@@ -26,6 +38,6 @@ const entrants = [
   { name: 'Carlos Nogueira', age: 50 },
 ];
 
-console.log(countEntrants(entrants));
+console.log(calculateEntry(entrants));
 
 module.exports = { calculateEntry, countEntrants };
