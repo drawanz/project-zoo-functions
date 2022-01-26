@@ -10,7 +10,6 @@ function isManager(id) {
   return managers.includes(id);
 }
 
-// eslint-disable-next-line max-lines-per-function
 function getRelatedEmployees(managerId) {
   if (managerId === stephanieId) {
     return ['Burl Bethea', 'Ola Orloff', 'Emery Elser'];
