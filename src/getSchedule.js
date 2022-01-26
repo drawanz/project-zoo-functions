@@ -38,10 +38,22 @@ function getSchedule(scheduleTarget) {
   const objCreated = createObj();
   const arrayAnimals = data.species.map((element) => element.name);
   const arrayDays = Object.keys(data.hours);
+  console.log(arrayDays.findIndex((element) => element.indexOf === scheduleTarget));
+  if (scheduleTarget === 'Monday') {
+    return { Monday: { officeHour: 'CLOSED', exhibition: 'The zoo will be closed!' } };
+  }
   if (scheduleTarget === undefined) {
     return objCreated;
   }
+  if (arrayDays.includes(scheduleTarget)) {
+    return 
+  }
+  if (arrayAnimals.includes(scheduleTarget)) {
+    return data.species.find((element) => element.name === scheduleTarget).availability;
+  }
+  return objCreated;
 }
 
+console.log(getSchedule('Tuesday'));
 
 module.exports = getSchedule;
