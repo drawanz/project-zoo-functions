@@ -39,7 +39,7 @@ function getSchedule(scheduleTarget) {
   const arrayAnimals = data.species.map((element) => element.name);
   const arrayDays = Object.keys(data.hours);
   if (scheduleTarget === 'Monday') {
-    return { Monday: { officeHour: 'CLOSED', exhibition: 'The zoo will be closed!' } };
+    return { [scheduleTarget]: objCreated[scheduleTarget] };
   }
   if (scheduleTarget === undefined) {
     return objCreated;
