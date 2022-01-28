@@ -18,8 +18,20 @@ function coverage(element) {
   };
 }
 
-function getEmployeesCoverage() {
-  return data.employees.map((valorAtual) => coverage(valorAtual));
+function getEmployeesCoverage(param) {
+  const obj = data.employees.map((valorAtual) => coverage(valorAtual));
+
+  if (param === undefined) {
+    return obj;
+  }
+  const key = Object.values(param)[0];
+  if (Object.keys(param).includes('name')) {
+    return obj.filter((element) => element.fullName.includes(key))[0];
+  }
+  if (Object.keys(param).includes('id')) {
+    return obj.filter((element) => element.id.includes(key))[0];
+  }
+  throw new Error('Informações inválidas');
 }
 
 console.log(getEmployeesCoverage());
