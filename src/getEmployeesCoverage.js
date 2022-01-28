@@ -2,11 +2,11 @@ const { species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 function animalName(id) {
-  return data.species.find((element) => element.id === id).name;
+  return species.find((element) => element.id === id).name;
 }
 
 function location(id) {
-  return data.species.find((element) => element.id === id).location;
+  return species.find((element) => element.id === id).location;
 }
 
 function coverage(element) {
