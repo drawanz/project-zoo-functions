@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 const date = data.hours;
 
@@ -53,6 +53,4 @@ function getSchedule(scheduleTarget) {
   return objCreated;
 }
 
-console.log(getSchedule('Tuesday'));
-
-module.exports = getSchedule;
+module.exports = getSchedule; // linha de código fornecida pela escola Trybe

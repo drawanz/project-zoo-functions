@@ -1,11 +1,9 @@
-const { species } = require('../data/zoo_data');
-const data = require('../data/zoo_data');
+const { species } = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function getAnimalsOlderThan(animal, age) {
   const animals = species.find((element) => element.name === animal).residents;
   return animals.every((element) => element.age >= age);
 }
 
-console.log(getAnimalsOlderThan('otters', 7));
-
-module.exports = getAnimalsOlderThan;
+module.exports = getAnimalsOlderThan; // linha de código fornecida pela escola Trybe

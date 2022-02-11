@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 // eslint-disable-next-line max-lines-per-function
 function countEntrants(entrants) {
@@ -38,6 +38,4 @@ const entrants = [
   { name: 'Carlos Nogueira', age: 50 },
 ];
 
-console.log(calculateEntry(entrants));
-
-module.exports = { calculateEntry, countEntrants };
+module.exports = { calculateEntry, countEntrants }; // linha de código fornecida pela escola Trybe

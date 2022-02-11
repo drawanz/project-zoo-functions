@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function countAnimals(animal) {
   const obj = {};
@@ -19,6 +19,4 @@ function countAnimals(animal) {
   }
 }
 
-console.log(countAnimals({ specie: 'penguins' }));
-
-module.exports = countAnimals;
+module.exports = countAnimals; // linha de código fornecida pela escola Trybe

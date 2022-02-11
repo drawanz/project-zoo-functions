@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function getEmployeeByName(employeeName) {
   const name = (element) => element.firstName === employeeName || element.lastName === employeeName;
@@ -8,6 +8,4 @@ function getEmployeeByName(employeeName) {
   return data.employees.find(name);
 }
 
-console.log(getEmployeeByName());
-
-module.exports = getEmployeeByName;
+module.exports = getEmployeeByName; // linha de código fornecida pela escola Trybe

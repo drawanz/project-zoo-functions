@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function getAnimalMap(options) {
   if (options === undefined) {
@@ -12,6 +12,4 @@ function getAnimalMap(options) {
   }
 }
 
-console.log(getAnimalMap({ includeNames: true }));
-
-module.exports = getAnimalMap;
+module.exports = getAnimalMap; // linha de código fornecida pela escola Trybe

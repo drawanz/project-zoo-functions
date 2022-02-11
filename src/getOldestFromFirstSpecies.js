@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function getOldestFromFirstSpecies(id) {
   const firstAnimal = data.employees.find((element) => element.id === id).responsibleFor[0];
@@ -7,6 +7,4 @@ function getOldestFromFirstSpecies(id) {
   return [oldestAnimal.name, oldestAnimal.sex, oldestAnimal.age];
 }
 
-console.log(getOldestFromFirstSpecies('c5b83cb3-a451-49e2-ac45-ff3f54fbe7e1'));
-
-module.exports = getOldestFromFirstSpecies;
+module.exports = getOldestFromFirstSpecies; // linha de código fornecida pela escola Trybe

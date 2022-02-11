@@ -1,5 +1,5 @@
-const { species } = require('../data/zoo_data');
-const data = require('../data/zoo_data');
+const { species } = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
+const data = require('../data/zoo_data'); // linha de código fornecida pela escola Trybe
 
 function animalName(id) {
   return species.find((element) => element.id === id).name;
@@ -33,4 +33,4 @@ function getEmployeesCoverage(param) {
   throw new Error('Informações inválidas');
 }
 
-module.exports = getEmployeesCoverage;
+module.exports = getEmployeesCoverage; // linha de código fornecida pela escola Trybe
